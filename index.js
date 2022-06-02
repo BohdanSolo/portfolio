@@ -36,3 +36,25 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+let email = document.getElementById('email')
+let copied = document.getElementById('copied')
+email.addEventListener('click', (e) => {
+    navigator.clipboard.writeText('solomakha.bohdan@gmail.com').then(() => {
+      copied.style.display = 'block'
+      setTimeout(() => {
+        copied.style.display = 'none'
+      }, 1000)
+    })
+})
+
+let email2 = document.getElementById('email2')
+let copied2 = document.getElementById('copied2')
+email2.addEventListener('click', (e) => {
+  navigator.clipboard.writeText('solomakha.bohdan@gmail.com').then(() => {
+    copied2.style.display = 'block'
+    setTimeout(() => {
+      copied2.style.display = 'none'
+    }, 1000)
+  })
+})

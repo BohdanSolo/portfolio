@@ -8,7 +8,6 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-//$mail->SMTPDebug = 3;
 
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
@@ -20,12 +19,6 @@ $mail->Port = 465;
 
 $mail->setFrom('for.portfolio@ukr.net');
 $mail->addAddress('solomakha.bohdan@gmail.com');
-//$mail->addAddress('ellen@example.com');
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');
 $mail->isHTML(true);
 
 $mail->Subject = 'Лист з портфоліо';
