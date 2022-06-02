@@ -13,12 +13,12 @@ $message = $_POST['message'];
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;
-$mail->Username = 'for.portfolio.sending@gmail.com';
-$mail->Password = 'for.portfolio.sending2022';
+$mail->Username = 'for.portfolio@ukr.net';
+$mail->Password = 'or.portfolio2022';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
-$mail->setFrom('for.portfolio.sending@gmail.com');
+$mail->setFrom('for.portfolio@ukr.net');
 $mail->addAddress('solomakha.bohdan@gmail.com');
 //$mail->addAddress('ellen@example.com');
 //$mail->addReplyTo('info@example.com', 'Information');
